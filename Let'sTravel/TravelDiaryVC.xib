@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TravelDiaryVC">
+            <connections>
+                <outlet property="BodyTextObj" destination="7w2-dt-6Oj" id="p9B-8b-EBm"/>
+                <outlet property="DatePickerObj" destination="3sv-oN-ZHa" id="T47-N2-ANW"/>
+                <outlet property="DateTextField" destination="onl-Ba-iCB" id="eQL-0F-22n"/>
+                <outlet property="SetImage" destination="2ds-cO-zJ0" id="a0E-hh-WdX"/>
+                <outlet property="TitleDiary" destination="4H7-B5-aQJ" id="DGd-Pd-fYc"/>
+                <outlet property="TravelDTable" destination="BzE-z7-5LJ" id="Khi-kv-1GU"/>
+                <outlet property="UserInfo" destination="JtC-yq-UqS" id="lHq-I1-VXG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diaryBack.jpg" id="MjB-Cn-bde">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BzE-z7-5LJ">
+                    <rect key="frame" x="0.0" y="58" width="320" height="512"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cgl-mD-z7g"/>
+                        <outlet property="delegate" destination="-1" id="BbH-Vx-btf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="329" y="322"/>
+        </view>
+        <view contentMode="scaleToFill" id="JtC-yq-UqS">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyTravel.jpg" id="Ohq-nv-hkz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" id="t8d-UF-eS7">
+                    <rect key="frame" x="29" y="88" width="272" height="434"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" id="onl-Ba-iCB">
+                            <rect key="frame" x="0.0" y="163" width="272" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.37151982760000002" green="0.3877613244" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2ds-cO-zJ0">
+                            <rect key="frame" x="0.0" y="291" width="272" height="114"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="justified" clearsOnBeginEditing="YES" minimumFontSize="17" id="4H7-B5-aQJ">
+                    <rect key="frame" x="29" y="88" width="272" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.83131142120000001" green="1" blue="0.64199393449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eBc-4S-kPL"/>
+                    </connections>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My Travel Story :-" textAlignment="natural" id="7w2-dt-6Oj">
+                    <rect key="frame" x="29" y="293" width="272" height="86"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.27098627381931184" green="0.030191133391570535" blue="1" alpha="0.72427262931034486" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="SD6-V7-GTl"/>
+                    </connections>
+                </textView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="3sv-oN-ZHa">
+                    <rect key="frame" x="29" y="133" width="272" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="491200877.91770297">
+                        <!--2016-07-26 04:41:17 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="DatePickAction:" destination="-1" eventType="valueChanged" id="Dmb-K9-eVR"/>
+                    </connections>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RM7-EG-aHJ">
+                    <rect key="frame" x="80" y="492" width="159" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Browse To Add Images"/>
+                    <connections>
+                        <action selector="BrowseButton:" destination="-1" eventType="touchUpInside" id="srQ-EZ-DfV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="704" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MyTravel.jpg" width="500" height="432"/>
+        <image name="diaryBack.jpg" width="480" height="640"/>
+    </resources>
+</document>
